@@ -1,5 +1,5 @@
 
-
+function obi() { 
 $("#c1-button").on("click", function (){
     // alert("I've been CLICKED!");
     // var string = "You chose Obi"
@@ -8,9 +8,12 @@ $("#c1-button").on("click", function (){
     $("#character").append(newDiv);
 
     var newDiv1= $("<div>")
-    .html("<img class= payers src ='https://www.sideshowtoy.com/wp-content/uploads/2017/07/star-wars-luke-skywalker-sixth-scale-hot-toys-feature-903109.jpg'> <img class= payers src ='https://www.sideshowtoy.com/wp-content/uploads/2017/07/star-wars-luke-skywalker-sixth-scale-hot-toys-feature-903109.jpg'>");
+    .html("<img class= players src ='https://www.sideshowtoy.com/wp-content/uploads/2017/07/star-wars-luke-skywalker-sixth-scale-hot-toys-feature-903109.jpg'> <img class= players src ='https://www.sideshowtoy.com/wp-content/uploads/2017/07/star-wars-luke-skywalker-sixth-scale-hot-toys-feature-903109.jpg'><img class= players src ='https://www.sideshowtoy.com/wp-content/uploads/2017/07/star-wars-luke-skywalker-sixth-scale-hot-toys-feature-903109.jpg'>");
     $("#enemies").append(newDiv1);
 
 });
+}
+obi();
+
 
 
