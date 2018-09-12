@@ -16,7 +16,7 @@ header {
     margin-bottom: 40px;
 }
 
-.players, #newDiv {
+.players {
     height: 100px;
     width: 150px;
     background: white;
@@ -42,5 +42,10 @@ h1 {
 
 #newDiv {
     text-align: center;
-    align-content: center; 
+    align-content: center;
+        height: 100px;
+        width: 150px;
+        background: white;
+        padding: 15px;
+    
 }
