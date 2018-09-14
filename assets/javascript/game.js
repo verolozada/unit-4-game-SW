@@ -52,22 +52,35 @@ window.onload = function () {
                 console.log(enemies);
             }
         }
+        var text = $("<div>")
+        text.addClass("text");
+        text.html("Choose your enemy")
+        $("#enemiesChar").append(text);
     });
 
-        
-    $(".enemies").on("click", function () {
-        console.log("Hello");
-        // var charName1 = $(this).attr("data-name");
-        // console.log(charName1);
-        // for (var i = 0; i < characters.length; i++) {
-        //     if (characters[i].name === charName1) {
-        //         var image = $("<img>")
-        //         image.attr("src", characters[i].img)
-        //         image.addClass("attacker")
-        //         $("#attacker").append(image)
-        //         attacker= characters[i];
-        //         console.log(attacker);
-        //     }
-        // }
+    // $(".enemies").on("click", function ()
+
+    $("#enemiesChar").on("click", ".enemies", function () {
+        var charName1 = $(this).attr("data-name");
+        for (var i = 0; i < characters.length; i++) {
+            if (characters[i].name === charName1) {
+                var image = $("<img>")
+                image.attr("src", characters[i].img)
+                image.addClass("attacker")
+                $("#attacker").append(image)
+                attacker = characters[i];
+                $(".enemies").hide();
+            }
+            else{
+                enemies.push(characters[i])
+                var image = $("<img>")
+                image.attr("src", characters[i].img)
+                image.attr("data-name", characters[i].name)
+                image.addClass("enemies")
+                $("#enemiesChar").append(image)
+            } 
+        }
     });
 }
+
+// how to go all over the for loop again

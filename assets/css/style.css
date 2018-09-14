@@ -11,7 +11,7 @@ header {
     width: auto;
 }
 #buttons {
-    margin-top: 80px;
+    margin-top: 40px;
     text-align: center;
     margin-bottom: 40px;
 }
@@ -27,7 +27,7 @@ header {
 
 h1 {
     font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Oswald";;
 }
 #character {
     color: white;
@@ -83,4 +83,41 @@ h1 {
     border: 3px solid blue;
     border-radius: 10px;
     margin: 2px;
+}
+
+#attacker {
+    color: white;
+    border: 3px solid rgb(205, 179, 7);
+    background: black;
+    width: 800px;
+    text-align: center;
+    align-content: center;
+    margin: 0 auto;
+    border-radius: 25px;
+    overflow: auto;
+    padding: 10px;
+    margin-top: 20px;
+}
+.text {
+    color: red;
+    font-size: 32px;
+    line-height: 16px; 
+    margin: 20px 0px;
+    font-family: 
+}
+
+#charChose{
+ color: white;
+ background: black;
+ width: 600px;
+ text-align: center;
+ align-content: center;
+ margin: 0 auto;
+ border-radius: 25px;
+ overflow: auto;
+ padding: 5px;
+ margin-top: 10px; 
+ margin-top: 80px;
+ text-align: center;
+ margin-bottom: 40px;
 }
