@@ -62,6 +62,7 @@ window.onload = function () {
 
     $("#enemiesChar").on("click", ".enemies", function () {
         var charName1 = $(this).attr("data-name");
+        console.log(charName1); 
         for (var i = 0; i < characters.length; i++) {
             if (characters[i].name === charName1) {
                 var image = $("<img>")
@@ -70,9 +71,11 @@ window.onload = function () {
                 $("#attacker").append(image)
                 attacker = characters[i];
                 $(".enemies").hide();
+                $(".text").hide();
             }
             else{
-                enemies.push(characters[i])
+                var newEnemies = characters[i];
+                enemies.push(newEnemies[i])
                 var image = $("<img>")
                 image.attr("src", characters[i].img)
                 image.attr("data-name", characters[i].name)
